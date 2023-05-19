@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketMaster 2.00</title>
+    <link rel="icon" href="./statics/boleto.png" type="image/png">
+</head>
+<body>
+    <table align="center">
+        <thead>
+            <tr>
+                <th><h1>TicketMaster</h1></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Consigue boletos para tus artistas favoritos en toda la CDMX a un excenlente costo</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Reserva para tu evento aqui mismo!</h2>
+    <form action="./dynamics/boletos.php" method="post" target="_self">
+        <fieldset>
+            <legend>Informacion personal</legend>
+            <label>Nombre:<input type="text" name="Nombre" required></label>
+            <br><br>
+            <label>Apellido:<input type="text" name="Apellido" required></label>
+            <br><br>
+            <label>Correo electronico:<input type="email" name="email" required></label>
+            <br><br>
+            <label for="Artista">Artista:</label>
+            <select id="Artista" name="Artista">
+                <option value="Kenia Os">Kenia Os</option>
+                <option value="Bad Bunny">Bad Bunny</option>
+                <option value="Taylor Swift">Taylor Swift</option>
+                <option value="Peso Pluma">Peso Pluma</option>
+                <option value="The Weekend">The Weekend</option>
+            </select>
+            <br><br>
+            <label>Fecha: <input type="date" name="Fecha" required></label>
+            <br><br>
+            <label for="zona">Zona:</label>
+            <select id="zona" name="Zona">
+                <option value="Premium">Premium</option>
+                <option value="Pista">Pista</option>
+                <option value="Gradas">Gradas</option>
+                <option value="No alcanzo a ver">No alcanzo a ver</option>
+            </select>
+            <br><br>
+            <label for="boletos">Numero de boletos:</label>
+            <select id="boletos" name="Boletos">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>  
+                <option value="6">6</option>  
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option> 
+                <option value="10">10</option>    
+                <option value="11">11</option> 
+                <option value="12">12</option>    
+                <option value="13">13</option> 
+                <option value="14">14</option> 
+                <option value="15">15</option>
+            </select>
+            <br><br>
+            <label>Lugar:
+            <br>
+            <input type="radio" name="lugar[]" value="Foro Sol" required> 
+            Foro sol
+            <br>
+            <input type="radio" name="lugar[]" value="Arena CDMX" required>
+            Arena CDMX
+            <br>
+            <input type="radio" name="lugar[]" value="Auditorio Nacional" required>
+            Auditorio Nacional
+            <br>
+            <input type="radio" name="lugar[]" value="Palacio de los deportes" required>
+            Palacio de los Deportes
+            <br>
+            <input type="radio" name="lugar[]" value="Teatro Metropolitan" required> 
+            Teatro Metropolitan
+            <br><br>
+            </label>
+            <label>Extras:
+                <br>
+                <input type="checkbox" name="check[]" value="Comida incluida">
+                Comida incluida
+                <br>
+                <input type="checkbox" name="check[]" value="Bebidas incluidas">
+                Bebidas incluidas
+                <br>
+                <input type="checkbox" name="check[]" value="Estacionamiento">
+                Estacionamiento
+                <br>
+                <input type="checkbox" name="check[]" value="Meet and Great">
+                Meet and greet
+                <br><br>
+            </label>
+            <button type="submit">Confirmar envio</button>
+            <button type="reset">Borrar</button>
+        </fieldset>
+    </form>
+    <br>
+</body>
+</html>
