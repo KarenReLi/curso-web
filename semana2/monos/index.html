@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de monos</title>
+    <link rel="icon" href="./statics/mono.png" type="image/png">
+</head>
+<body>
+    <h1 align="center">TALLER DE ESCRITURA DE MONOS</h1>
+    <form action="./dynamics/documento.php" method="post" target="_self">
+        <fieldset>
+            <legend align="center">Buscador</legend>
+            <label>Introduce el texto que quieres buscar: <input type="text" name="texto" required></label>
+            <br><br>
+            <label for="tipobusca">Tipo de buscador:</label>
+            <select id="tipobusca" name="tipobuscador">
+                <option value="normal">Normal</option>
+                <option value="palabras">Palabras</option>
+                <option value="orden">Orden</option>
+            </select>
+            <br><br>
+            <label for="zonahoraria">Zona horaria:</label>
+            <select id="zonahoraria" name="zona">
+                <option value="MexicoCity">Mexico City</option>
+                <option value="NewYork">New York</option>
+                <option value="Amsterdam">Amsterdam</option>
+                <option value="HongKong">Hong Kong</option>
+            </select>
+            <br><br>
+            <button type="submit">Confirmar envio</button>
+            <button type="reset">Borrar</button>
+        </fieldset>
+    </form>
+    <p align="right">*Ningun mono fue explotado para hacer esta tarea*</p>
+</body>
+</html>
