@@ -1,0 +1,271 @@
+
+@font-face 
+{
+    font-family: "Luckie";
+    src: url(../fonts/Luckie.otf);
+}
+@font-face 
+{
+    font-family: "Unfolding";
+    src: url(../fonts/Unfolding\ Free.ttf);
+}
+@font-face 
+{
+    font-family: "Starlight";
+    src: url(../fonts/StarlightDEMO.ttf);
+}
+@font-face 
+{
+    font-family: "Vogue";
+    src: url(../fonts/Vogue.ttf);
+}
+@font-face 
+{
+    font-family: "University";
+    src: url(../fonts/university.ttf);
+}
+body
+{
+    background-color: rgb(0, 0, 0);
+}
+h1
+{
+    text-align: center;
+    font-family:"Starlight", sans-serif;
+    color:#9CFAD9;
+    font-size:xx-large;
+}
+h2
+{
+    font-family: "Unfolding";
+    text-align: center;
+    color: #94DB79;
+}
+h3
+{
+    color: #94DB79;
+    text-align: center;
+}
+h4
+{
+    color:black;
+    text-align: center;
+}
+td
+{
+    text-align: center;
+}
+hr
+{
+    color: #FF9D8C;
+}
+.img2:hover
+{
+    transform:scale(1.5);
+}
+.card:hover
+{
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    color: #f1755f;
+    background-color: #fdc9c0;
+    font-size:xx-large;
+    margin: auto;
+    display: inline-block;
+}
+a.enlace:link
+{
+    font-family:"Vogue", sans-serif;
+    color: #ffc3b9;
+    font-size:large;
+}
+a.enlace:visited
+{
+    font-family:"Vogue", sans-serif;
+    color: #e02200;
+    font-size:large;
+    
+}
+a.enlace:hover
+{
+    color: #f1755f;
+    font-size:x-large;
+}
+.texto
+{
+    color: #ffffff;
+    text-align:justify;
+}
+.titulo
+{
+    color: #94DB79;
+    text-align: center;
+}
+.comida1
+{
+    flex: auto;
+    width: 15%;
+    height: 15%;
+    padding: 10px;
+    position: relative;
+    background-color: #fadfda;
+    display: inline-block;
+}
+.img1{
+    margin:auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+#tabla1
+{
+    background-color: rgba(214, 214, 207, 0.397);
+}
+#tabla2
+{
+    background-color: rgba(214, 214, 207, 0.397) ;
+}
+#comida
+{
+    flex: auto;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#temaimportante
+{
+    margin: auto;
+    position: relative;
+    background-color: rgba(131, 134, 133, 0.603);
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    overflow: scroll;
+}
+#ilustracion
+{
+    width: 500px;
+    height: 500px;
+    background-color: #1c0264;
+    position: relative;
+    margin:auto;
+    z-index: -5;
+}
+#cuerpo
+{
+    width: 225px;
+    height: 315px;
+    background-color: #da0404; 
+    border: 5px solid rgb(0, 0, 0);
+    border-bottom: #da0404;
+    position: absolute;
+    top:5%;
+    left: 25%;
+    border-radius: 45% 45% 0% 0%;
+}
+#ojos
+{
+    width: 175px;
+    height: 100px;
+    background-color: #306fa3; 
+    border: 5px solid rgb(0, 0, 0);
+    position: absolute;
+    top:19%;
+    right: -15%;
+    border-radius:45% 45% 45% 45%;
+    z-index: 10;
+}
+#detalle1
+{
+    width: 145px;
+    height: 80px;
+    background-color: #008cff; 
+    position: absolute;
+    top:2%;
+    right: 1%;
+    border-radius:20% 50% 30% 34%;
+    z-index: 15;
+}
+#detalle2
+{
+    width: 100px;
+    height: 50px;
+    background-color: #ffffffbe; 
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    border-radius:50% 50% 50% 50%;
+    z-index: 20;
+}
+#atras
+{
+    width: 40px;
+    height: 180px;
+    background-color: rgb(255, 0, 0); 
+    border: 5px solid rgb(0, 0, 0);
+    border-right: rgb(255, 0, 0);
+    position: absolute;
+    top:42%;
+    left: -22%;
+    border-radius: 50% 0 0% 50%;
+}
+#detalle_cuerpo
+{
+    width: 195px;
+    height: 275px;
+    background-color: rgb(255, 0, 0);
+    border: 5px solid rgb(255, 0, 0);
+    position: absolute;
+    top:1%;
+    right:1%;
+    border-radius: 45% 45% 30% 40%;
+    z-index: 5;
+}
+#detalle_atras
+{
+    width: 20px;
+    height: 130px;
+    background-color: #da0404;
+    border: 5px solid #da0404;
+    position: absolute;
+    bottom:1%;
+    right:1%;
+    border-radius: 30% 0% 0% 40%;
+    z-index: 5;
+}
+#pie1
+{
+    width: 90px;
+    height: 100px;
+    background-color: #da0404; 
+    border: 5px solid rgb(0, 0, 0);
+    border-top: #da0404;
+    position: absolute;
+    bottom:-33.3%;
+    left: -2%;
+    border-radius: 0% 0 50% 50%;
+}
+#pie2
+{
+    width: 90px;
+    height: 100px;
+    background-color: #da0404; 
+    border: 5px solid rgb(0, 0, 0);
+    border-top: #da0404;
+    position: absolute;
+    bottom:-33.3%;
+    right: -2.5%;
+    border-radius: 0% 0 50% 50%;
+}
+#circulo
+{
+    width: 135px;
+    height: 135px;
+    background-color: #da0404; 
+    border-bottom: 5px solid rgb(0, 0, 0);
+    position: absolute;
+    bottom:88%;
+    right:50%;
+    border-radius: 0% 0 60% 60%;
+    z-index: -2;
+}
