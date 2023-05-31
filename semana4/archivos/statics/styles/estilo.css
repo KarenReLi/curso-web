@@ -1,0 +1,51 @@
+
+@font-face 
+{
+    font-family: "Luckie";
+    src: url(../fonts/Luckie.otf);
+}
+@font-face 
+{
+    font-family: "Unfolding";
+    src: url(../fonts/'Unfolding.ttf');
+}
+@font-face 
+{
+    font-family: "Starlight";
+    src: url(../fonts/StarlightDEMO.ttf);
+}
+@font-face 
+{
+    font-family: "Vogue";
+    src: url(../fonts/Vogue.ttf);
+}
+@font-face 
+{
+    font-family: "University";
+    src: url(../fonts/university.ttf);
+}
+body
+{ 
+    position: relative;
+    background-color:black;
+}
+h1
+{
+    text-align: center;
+    font-family:"Starlight", sans-serif;
+    color:#4aff02dc;
+    font-size:xx-large;
+}
+#inciosesion
+{
+    border: 1px solid #02f7ffdc;
+    border-radius: 5px;
+    padding: 17px;
+    width: 300px;
+    position: absolute;
+    top:900%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+

@@ -1,0 +1,83 @@
+@font-face 
+{
+    font-family: "Luckie";
+    src: url(../fonts/Luckie.otf);
+}
+@font-face 
+{
+    font-family: "Unfolding";
+    src: url(../fonts/Unfolding\ Free.ttf);
+}
+@font-face 
+{
+    font-family: "Starlight";
+    src: url(../fonts/StarlightDEMO.ttf);
+}
+@font-face 
+{
+    font-family: "Vogue";
+    src: url(../fonts/Vogue.ttf);
+}
+@font-face 
+{
+    font-family: "University";
+    src: url(../fonts/university.ttf);
+}
+body
+{
+    background-image: url(../ajolote.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2
+{
+    font-family:"Vogue", sans-serif;
+    color: #ff008cdc;
+    font-size:xx-large;
+}
+.texto
+{
+    color: white;
+}
+#seleccion
+{
+    border: 1px solid #ff008cdc;
+    border-radius: 5px;
+    padding: 17px;
+    width: 300px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#seleccion2
+{
+    border: 1px solid #ff008cdc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 70px;
+    position: absolute;
+    top:65%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#seleccion3
+{
+    border: 1px solid #ff008cdc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    position: absolute;
+    top:73%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
