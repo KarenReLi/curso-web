@@ -1,0 +1,785 @@
+@font-face 
+{
+    font-family: "Luckie";
+    src: url(../fonts/Luckie.otf);
+}
+@font-face 
+{
+    font-family: "Unfolding";
+    src: url(../fonts/Unfolding\ Free.ttf);
+}
+@font-face 
+{
+    font-family: "Starlight";
+    src: url(../fonts/StarlightDEMO.ttf);
+}
+@font-face 
+{
+    font-family: "Vogue";
+    src: url(../fonts/Vogue.ttf);
+}
+@font-face 
+{
+    font-family: "University";
+    src: url(../fonts/university.ttf);
+}
+
+body
+{
+    background-image: url(../img/fondo1.png);
+    background-repeat: 100% 100%;
+}
+h1
+{
+    display: block;
+    background-color: #ffff0091;
+    color: rgb(0, 0, 0);
+    font-family: "Starlight", sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+h2
+{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: "Vogue", sans-serif;
+    font-size: large;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+.box
+{
+    background-color: rgba(0, 0, 0, 0.555);
+    color: rgb(255, 255, 255);
+}
+
+/*============================================================ANIMACION 1===============================================================*/
+#corazon1
+{
+    top: 63%;
+    left: 33%;
+    position: relative;
+    animation-name: beso;
+	animation-duration: 5s;
+	animation-delay: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+#corazon2
+{
+    top: 40%;
+    left: 35%;
+    position: relative;
+    animation-name: beso;
+	animation-duration: 8s;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+#corazon3
+{
+    top: 32%;
+    left: 28%;
+    position: relative;
+    animation-name: beso;
+	animation-duration: 4s;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes beso 
+{
+    0%
+    {
+        transform: translateX(0px);
+    }
+    100%
+    {
+        transform: translateX(250px);
+    }
+}
+
+/*============================================================ANIMACION 2===============================================================*/
+#pelota
+{      
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    animation-name: lanzamiento;
+	animation-duration: 5s;
+	animation-delay: 1s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes lanzamiento 
+{
+    0%
+    {
+        background-color: yellow;
+        transform: translateX(170px);
+    }
+    30%
+    {
+        background-color: orange;
+        transform: translateX(140px);
+    }
+    60%
+    {
+        background-color: orangered;
+        transform: translateX(58px);
+    }
+    90%
+    {
+        background-color: rgb(255, 0, 0);
+        transform: translate(10px);
+        transform: translateY(30px);
+    }
+}
+
+/*============================================================ANIMACION 3===============================================================*/
+#locura
+{
+    animation-name: loco;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes loco 
+{
+    0%
+    {
+        transform: rotate(-200deg);
+    }
+    90%
+    {
+        transform: scale(1.2);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+
+}
+
+/*============================================================ANIMACION 4===============================================================*/
+#crush
+{
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/cora.png);
+    animation-name: corazon;
+	animation-duration: 10s;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes corazon 
+{
+    25%
+    {
+        background-image: url(../img/cora.png);
+    }
+    50%
+    {
+        background-image: url(../img/corafuego.png);
+    }
+    75%
+    {
+        background-image: url(../img/coraroto.png);
+    }
+    100%
+    {
+        background-image: url(../img/corasano.png);
+    }
+}
+
+/*============================================================ANIMACION 5===============================================================*/
+.ilustracion
+{
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0);
+}
+#elemento1
+{
+    width: 1px;
+    height: 1px;
+    top: 115%;
+    left: 73%;
+    position: relative;
+    border-radius: 50px;
+    background-color: rgb(0, 183, 255);
+    animation-name: llorar;
+	animation-duration: 8s;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+#elemento2
+{
+    width: 1px;
+    height: 1px;
+    top: 15%;
+    right: -130%;
+    position: relative;
+    border-radius: 50px;
+    background-color: rgb(0, 183, 255);
+    animation-name: llorar;
+	animation-duration: 8s;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes llorar 
+{
+    100%
+    {
+        width: 15px;
+        height: 110px;
+        transform: translateX(0x);
+    }
+}
+
+/*============================================================ANIMACION 6===============================================================*/
+#enojado 
+{
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/enojado1.png);
+}
+#enojado:hover
+{
+    transition-property: background-image;
+    transition-duration: 2s;
+    background-image: url(../img/muyenojado.png);
+}
+/*============================================================ANIMACION 7===============================================================*/
+/*#imagenes
+{
+    width: 1030px;
+    height: 250px;
+}
+#img1
+{ 
+    height: 62.5px;
+    top: 0%;
+    left: 0%;
+    position: relative;
+    z-index: 10;
+}
+#img2
+{
+    height: 62.5px;
+    top: -25%;
+    left: 0%;
+    position: relative;
+    z-index: 8;
+    animation-name: img2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes img2
+{
+    0%
+    {
+        transform: translateX(0px);
+    }
+    100%
+    {
+        transform: translateX(270px);
+    }
+}
+#img3
+{
+    height: 62.5px;
+    top: -50%;
+    left: 0%;
+    position: relative;
+    z-index: 6;
+    animation-name: img3;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes img3
+{
+    0%
+    {
+        transform: translateX(0px);
+    }
+    100%
+    {
+        transform: translateX(570px);
+    }
+}
+#img4
+{
+    height: 62.5px;
+    top: -75%;
+    left: 0%;
+    position: relative;
+    z-index: 4;
+    animation-name: img4;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes img4
+{
+    0%
+    {
+    transform: translateX(0px);
+    }
+    100%
+    {
+    transform: translateX(870px);
+    }
+}*/
+
+/*============================================================RESPONSIVIDAD===============================================================*/
+@media screen and (min-width: 1200px)
+{
+    .grid
+    {
+        display:grid;
+        width: 1120px;
+        height: 1030px;
+        grid-template-rows: repeat(18, 42px);
+        grid-template-columns: repeat(4, 250px);
+        gap: 10px;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        background-color: rgba(119, 5, 5, 0.438);
+    }
+    #caja1
+    {
+
+        grid-row: 1/6;
+        grid-column: 1/3;
+        background-image: url(../img/beso.png);
+        background-repeat: no-repeat;
+    }
+    #caja2
+    {
+        display: flex;
+        grid-row: 6/7;
+        grid-column: 1/3;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja3
+    {
+        display: flex;
+        grid-row: 1/6;
+        grid-column: 3/4;
+        justify-content: start;
+        align-items: start;
+        background-image: url(../img/lance.png);
+    }
+    #caja4
+    {
+        display: flex;
+        grid-row: 1/6;
+        grid-column: 4/5;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja5
+    {
+        display: flex;
+        grid-column: 3/4;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja6
+    {
+        display: flex;
+        grid-column: 4/5;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja7
+    {
+        display: flex;
+        grid-row: 7/12;
+        grid-column: 1/2;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja8
+    {
+        grid-row: 7/12;
+        grid-column: 2/3;
+        background-image: url(../img/triste.png);
+    }
+    #caja9
+    {
+        display: flex;
+        grid-row: 12/13;
+        grid-column: 1/2;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja10
+    {
+        display: flex;
+        grid-row: 12/13;
+        grid-column: 2/3;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja11
+    {
+        display: flex;
+        grid-row: 7/12;
+        grid-column: 3/5;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja12
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 3/5;
+    }
+    #caja13
+    {
+        display: flex;
+        grid-row: 13/18;
+        grid-column: 1/5;  
+        justify-content: center;
+        align-items: start; 
+
+    }
+    #caja14
+    {
+        display: flex;
+        grid-row: 18/19;
+        grid-column: 1/5; 
+        justify-content: center;
+        align-items: center;
+    }
+    #imagenes
+    {
+        width: 1030px;
+        height: 250px;
+    }
+    #img1
+    { 
+        height: 62.5px;
+        top: 0%;
+        left: 0%;
+        position: relative;
+        z-index: 10;
+    }
+    #img2
+    {
+        height: 62.5px;
+        top: -25%;
+        left: 0%;
+        position: relative;
+        z-index: 8;
+        animation-name: img2;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img2
+    {
+        0%
+        {
+            transform: translateX(0px);
+        }
+        100%
+        {
+            transform: translateX(270px);
+        }
+    }
+    #img3
+    {
+        height: 62.5px;
+        top: -50%;
+        left: 0%;
+        position: relative;
+        z-index: 6;
+        animation-name: img3;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img3
+    {
+        0%
+        {
+            transform: translateX(0px);
+        }
+        100%
+        {
+            transform: translateX(570px);
+        }
+    }
+    #img4
+    {
+        height: 62.5px;
+        top: -75%;
+        left: 0%;
+        position: relative;
+        z-index: 4;
+        animation-name: img4;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img4
+    {
+        0%
+        {
+        transform: translateX(0px);
+        }
+        100%
+        {
+        transform: translateX(870px);
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 650px)
+{
+    .grid
+    {
+        display:grid;
+        width: 640px;
+        height: 1900px;
+        grid-template-rows: repeat(36, 42px);
+        grid-template-columns: repeat(2, 250px);
+        gap: 10px;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        background-color: rgba(119, 5, 5, 0.438);
+    }
+    #caja1
+    {
+        grid-row: 1/6;
+        grid-column: 1/3;
+        background-image: url(../img/beso.png);
+        background-repeat: no-repeat;
+    }
+    #caja2
+    {
+        display: flex;
+        grid-column: 1/3;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja3
+    {
+        display: flex;
+        grid-row: 7/12;
+        grid-column: 1/2;
+        justify-content: start;
+        align-items: start;
+        background-image: url(../img/lance.png);
+    }
+    #caja4
+    {
+        display: flex;
+        grid-row: 7/12;
+        grid-column: 2/3;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja5
+    {
+        display: flex;
+        grid-column: 1/2;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja6
+    {
+        display: flex;
+        grid-column: 2/3;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja7
+    {
+        display: flex;
+        grid-row: 13/18;
+        grid-column: 1/2;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja8
+    {
+        grid-row: 13/18;
+        grid-column: 2/3;
+        background-image: url(../img/triste.png);
+    }
+    #caja9
+    {
+        display: flex;
+        grid-column: 1/2;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja10
+    {
+        display: flex;
+        grid-column: 2/3;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja11
+    {
+        display: flex;
+        grid-row: 19/24;
+        grid-column: 1/3;
+        justify-content: center;
+        align-items: center;
+    }
+    #caja12
+    {
+        display: flex;
+        grid-column: 1/3;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #caja13
+    {
+        display: flex;
+        grid-row: 25/35;
+        grid-column: 1/3;  
+        justify-content: center;
+        align-items: start; 
+
+    }
+    #caja14
+    {
+        display: flex;
+        grid-row: 35/36;
+        grid-column: 1/3;  
+        justify-content: center;
+        align-items: center;
+    }
+    #imagenes
+    {
+        width: 510px;
+        height: 510px;
+    }
+    #img1
+    { 
+        height: 127.5px;
+
+        top: 0%;
+        left: 0%;
+        position: relative;
+        z-index: 10;
+    }
+    #img2
+    {
+        height: 127.5px;
+        top: -25%;
+        left: 0%;
+        position: relative;
+        z-index: 8;
+        animation-name: img2;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img2
+    {
+        0%
+        {
+            transform: translateX(0px);
+        }
+        100%
+        {
+            transform: translateX(255px);           
+        }
+    }
+    #img3
+    {
+        height: 127.5px;
+        top: -50%;
+        left: 0%;
+        position: relative;
+        z-index: 6;
+        animation-name: img3;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img3
+    {
+        0%
+        {
+            transform: translateX(0px);
+        }
+        100%
+        {
+            transform: translateY(260px);
+        }
+    }
+    #img4
+    {
+        height: 127.5px;
+        top: -75%;
+        left: 0%;
+        position: relative;
+        z-index: 4;
+        animation-name: img4;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img4
+    {
+        0%
+        {
+        transform: translateX(0px);
+        }
+        100%
+        {
+            transform: translate(255px, 260px);
+        }
+    }
+}
