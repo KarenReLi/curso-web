@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+</head>
+<body>
+    <div>
+        <h1>Lista de tareas</h1>
+        <form id="formulario" method="post">
+            <div>
+                <div id="ingresoTareas">
+                    <h4>Ingresa nueva tarea:</h4>
+                    <label><input id="Tareas" type="text" id="Nombre" placeholder="Nombre de la tarea" required></label>
+                    <p>No se pueden repetir tareas</p>
+                </div>
+                <div id="ingresarMaterias"> 
+                    <label for="Materia">Seleccione el nombre de la materia o ingrese uno nuevo de asi desearlo</label>
+                    <select id="Materia" class="elementosSelect" name="materia">
+                        <option class="IngresoMateria" value="otra">Otra</option>
+                        <!--Aqui se agregan las nuevas materias -->
+                    </select>
+                    <!--Input para recibir el nombre de nueva materia-->
+                    <label><input id="nuevaMateria" type="text" id="NombreMat" autocomplete="off" placeholder="Nombre de la nueva materia"></label>
+                </div>  
+                <button type="submit">Agregar</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </form>
+        <div id="listaDeTareas">
+            <h2>Lista de Tareas</h2>
+            <div id="Secciones">
+                
+            </div>
+            <!--Insertar un div para agregar las tareas-->
+        </div> 
+    </div>
+    <script src="./dynamics/js/index.js"></script> 
+</body>
+</html>
